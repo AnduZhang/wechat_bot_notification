@@ -1,0 +1,10 @@
+{
+    "test": {
+        "database_type": "mysql",
+        "hostname": "your_host",
+        "database": "your_database",
+        "username": "your_username",
+        "password": "your_password",
+        "port": 3306
+    }
+}
