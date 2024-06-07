@@ -14,7 +14,7 @@ class example_rule(base_rule):
 select id, name, phone from user where phone is null
 """
         super().__init__(
-            db_name='iuap', #使用db_config中的数据库连接名  
+            db_name='test', #使用db_config中的数据库连接名  
             sql=sql, #异常业务数据查询语句
             general_error="没有手机号的异常数据{}组，详细情况如下：\n", #异常数据总提示
             detail_error_prefix="用户ID{}，姓名{}", #异常数据明细
