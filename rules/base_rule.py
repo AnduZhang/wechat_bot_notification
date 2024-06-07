@@ -1,7 +1,7 @@
 from utils.db_connector import get_db_connection
 from utils.notification_sender import send_to_wechat
 class base_rule:
-    def __init__(self, db_name = 'iuap', sql = '', general_error = '', detail_error_prefix = '', wechat_bot = 'iuap', frequency = 60):
+    def __init__(self, db_name = 'test', sql = '', general_error = '', detail_error_prefix = '', wechat_bot = 'test', frequency = 60):
         self.db_name = db_name
         self.sql = sql
         self.general_error = general_error
