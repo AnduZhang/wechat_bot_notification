@@ -1,5 +1,6 @@
 import json
 import mysql.connector
+import psycopg2
 # 可根据需要导入其他数据库连接库
 
 def get_db_connection(db_identifier):
@@ -18,6 +19,14 @@ def get_db_connection(db_identifier):
             user=config['username'],
             password=config['password'],
             database=config['database'],
+            port=config['port']
+        )
+    if config['database_type'] == 'postgresql':
+        return psycopg2.connect(
+            host=config['hostname'],
+            user=config['username'],
+            password=config['password'],
+            dbname=config['database'],
             port=config['port']
         )
     else:
