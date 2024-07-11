@@ -1,10 +1,18 @@
 {
-    "test": {
+    "mysql": {
         "database_type": "mysql",
         "hostname": "your_host",
         "database": "your_database",
         "username": "your_username",
         "password": "your_password",
         "port": 3306
+    },
+    "postgresql": {
+        "database_type": "postgresql",
+        "hostname": "your_host",
+        "database": "your_database",
+        "username": "your_username",
+        "password": "your_password",
+        "port": 5432
     }
 }
